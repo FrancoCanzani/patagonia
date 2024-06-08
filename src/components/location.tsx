@@ -12,7 +12,6 @@ export default function Location() {
       </h2>
       <div className='flex flex-col items-start justify-center space-y-3 w-full'>
         <div className='pr-4 space-y-2'>
-          <h4 className='font-semibold text-xl'>{t('subtitle')}</h4>
           <p className='italic font-medium'>
             🗺️ Carrer del Pont, 19, 03700 Dénia, Alicante
           </p>
