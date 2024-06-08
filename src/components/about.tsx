@@ -9,10 +9,8 @@ export default function About() {
   return (
     <section className='space-y-14'>
       <div>
-        <div className='flex items-center justify-between'>
-          <h2
-            className={`${ds.className} font-medium text-3xl md:text-7xl mb-4`}
-          >
+        <div className='flex items-center justify-between mb-4'>
+          <h2 className={`${ds.className} font-medium text-3xl md:text-7xl`}>
             Allora L&apos;Originale
           </h2>
           <div className='flex items-center justify-center gap-x-3'>
@@ -36,7 +34,7 @@ export default function About() {
               </svg>
             </a>
             <a
-              href='/CARTA ALLORA PAGATONIA.pdf'
+              href='/CARTA-ALLORA-PAGATONIA.pdf'
               download
               className='hover:underline font-medium'
             >
@@ -57,10 +55,8 @@ export default function About() {
         </div>
       </div>
       <div>
-        <div className='flex items-center justify-between'>
-          <h2
-            className={`${ds.className} font-medium text-3xl md:text-7xl mb-4`}
-          >
+        <div className='flex items-center justify-between mb-4'>
+          <h2 className={`${ds.className} font-medium text-3xl md:text-7xl`}>
             Patagonia
           </h2>
           <div className='flex items-center justify-center gap-x-3'>
@@ -84,7 +80,7 @@ export default function About() {
               </svg>
             </a>
             <a
-              href='/CARTA ALLORA PAGATONIA.pdf'
+              href='/CARTA-ALLORA-PAGATONIA.pdf'
               download
               className='hover:underline font-medium'
             >
@@ -105,15 +101,13 @@ export default function About() {
         </div>
       </div>
       <div>
-        <div className='flex items-center justify-between'>
-          <h2
-            className={`${ds.className} font-medium text-3xl md:text-7xl mb-4`}
-          >
+        <div className='flex items-center justify-between mb-4'>
+          <h2 className={`${ds.className} font-medium text-3xl md:text-7xl`}>
             Fayiz Lebanon
           </h2>
           <div className='flex items-center justify-center gap-x-3'>
             <a
-              href='/CARTAS FAYIZ.pdf'
+              href='/CARTAS-FAYIZ.pdf'
               download
               className='hover:underline font-medium'
             >
