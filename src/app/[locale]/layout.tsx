@@ -1,15 +1,25 @@
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-
+import { getTranslations } from 'next-intl/server';
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Allora',
-  description: 'Allora - Magazinos',
+type LocaleParams = {
+  params: {
+    locale: string;
+  };
 };
+
+export async function generateMetadata({ params: { locale } }: LocaleParams) {
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+  };
+}
 
 export default async function LocaleLayout({
   children,

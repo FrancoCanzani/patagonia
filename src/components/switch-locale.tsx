@@ -12,7 +12,7 @@ export default function LanguageChanger() {
   const locales: Array<'es' | 'en' | 'de' | 'fr'> = ['es', 'en', 'fr', 'de'];
 
   return (
-    <div className='inline-flex italic text-sm justify-evenly gap-x-2 uppercase'>
+    <div className='inline-flex italic text-sm justify-evenly gap-x-4 uppercase'>
       {locales.map((locale) => (
         <Link
           key={locale}
