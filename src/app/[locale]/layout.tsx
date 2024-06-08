@@ -18,13 +18,11 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body className={`${inter.className} bg-primary`}>
+      <body className={`${inter.className} bg-primary max-w-4xl p-4 m-auto`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
